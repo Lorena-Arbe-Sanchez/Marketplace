@@ -4,7 +4,7 @@ from Apps.usuario.models import Usuario
 
 
 class Categoria(models.Model):
-    codigo = models.IntegerField()  # TODO : Poner autoincremental? (Para que cada vez que se inserte uno, se le ponga un código único como ID)
+    codigo = models.IntegerField()
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField()
 
@@ -12,15 +12,29 @@ class Categoria(models.Model):
         return self.nombre
 
 
-# Create your models here.
 class Producto(models.Model):
-    codigo = models.IntegerField()  # TODO : Poner autoincremental? (Para que cada vez que se inserte uno, se le ponga un código único como ID)
+    # Definir los estados posibles
+    ESTADOS = [
+        ('DISPONIBLE', 'Disponible'),
+        ('RESERVADO', 'Reservado'),
+        ('VENDIDO', 'Vendido'),
+    ]
+
+    codigo = models.IntegerField()
     titulo = models.CharField(max_length=100)
     descripcion = models.TextField()
     precio = models.DecimalField(max_digits=10, decimal_places=2)
-    estado = models.BooleanField(default=True)  # TODO : Ya revisaremos si cambiar el tipo de dato
-    fecha_publicacion = models.DateTimeField()
 
+    estado = models.CharField(
+        max_length=15,
+        choices=ESTADOS,
+        default='DISPONIBLE'
+    )
+
+    # La fecha actual se pondrá automáticamente al crear el objeto
+    fecha_publicacion = models.DateTimeField(auto_now_add=True)
+
+    # La categoría del producto
     categoria = models.ForeignKey(
         Categoria,
         on_delete=models.PROTECT,
@@ -28,11 +42,10 @@ class Producto(models.Model):
         blank=True
     )
 
+    # El usuario que lo vende
     usuario = models.ForeignKey(
         Usuario,
-        on_delete=models.PROTECT,
-        null=True,
-        blank=True
+        on_delete=models.PROTECT
     )
 
     def __str__(self):
