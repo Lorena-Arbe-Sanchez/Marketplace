@@ -11,7 +11,7 @@ class Solicitud(models.Model):
         ('CANCELADA', 'Cancelada'),
     ]
 
-    codigo = models.IntegerField()
+    codigo = models.IntegerField(unique=True)
     fecha = models.DateTimeField(auto_now_add=True)
     estado = models.CharField(max_length=15, choices=ESTADOS, default='PENDIENTE')
     mensaje = models.TextField(blank=True, null=True)

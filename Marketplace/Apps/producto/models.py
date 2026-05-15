@@ -4,7 +4,7 @@ from Apps.usuario.models import Usuario
 
 
 class Categoria(models.Model):
-    codigo = models.IntegerField()
+    codigo = models.IntegerField(unique=True)
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField()
 
@@ -20,7 +20,7 @@ class Producto(models.Model):
         ('VENDIDO', 'Vendido'),
     ]
 
-    codigo = models.IntegerField()
+    codigo = models.IntegerField(unique=True)
     titulo = models.CharField(max_length=100)
     descripcion = models.TextField()
     precio = models.DecimalField(max_digits=10, decimal_places=2)

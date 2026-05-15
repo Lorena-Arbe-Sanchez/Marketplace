@@ -1,0 +1,10 @@
+[
+  {"model": "solicitud.solicitud", "pk": 1, "fields": {"codigo": 1, "estado": "PENDIENTE", "mensaje": "Me interesa el ratón.", "producto": 1, "usuario_interesado": 2}},
+  {"model": "solicitud.solicitud", "pk": 2, "fields": {"codigo": 2, "estado": "ACEPTADA", "mensaje": "Lo quiero para mañana.", "producto": 2, "usuario_interesado": 1}},
+  {"model": "solicitud.solicitud", "pk": 3, "fields": {"codigo": 3, "estado": "CANCELADA", "mensaje": "Ya no lo necesito.", "producto": 3, "usuario_interesado": 4}},
+  {"model": "solicitud.solicitud", "pk": 4, "fields": {"codigo": 4, "estado": "PENDIENTE", "mensaje": "Sigue disponible el teclado?", "producto": 4, "usuario_interesado": 3}},
+  {"model": "solicitud.solicitud", "pk": 5, "fields": {"codigo": 5, "estado": "PENDIENTE", "mensaje": "Me sirve para el examen.", "producto": 5, "usuario_interesado": 6}},
+  {"model": "solicitud.solicitud", "pk": 6, "fields": {"codigo": 6, "estado": "PENDIENTE", "mensaje": "Aceptas intercambios?", "producto": 6, "usuario_interesado": 7}},
+  {"model": "solicitud.solicitud", "pk": 7, "fields": {"codigo": 7, "estado": "PENDIENTE", "mensaje": "Las compro hoy mismo.", "producto": 7, "usuario_interesado": 8}},
+  {"model": "solicitud.solicitud", "pk": 8, "fields": {"codigo": 8, "estado": "ACEPTADA", "mensaje": "Me encanta la sudadera.", "producto": 8, "usuario_interesado": 5}}
+]
