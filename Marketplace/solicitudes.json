@@ -4,6 +4,7 @@
     "pk": 1,
     "fields": {
       "codigo": 1,
+      "fecha": "2026-05-15T12:00:00Z",
       "estado": "PENDIENTE",
       "mensaje": "Me interesa el ratón.",
       "producto": 1,
@@ -15,6 +16,7 @@
     "pk": 2,
     "fields": {
       "codigo": 2,
+      "fecha": "2026-05-15T12:00:00Z",
       "estado": "ACEPTADA",
       "mensaje": "Lo quiero para mañana.",
       "producto": 2,
@@ -26,6 +28,7 @@
     "pk": 3,
     "fields": {
       "codigo": 3,
+      "fecha": "2026-05-15T12:00:00Z",
       "estado": "CANCELADA",
       "mensaje": "Ya no lo necesito.",
       "producto": 3,
@@ -37,6 +40,7 @@
     "pk": 4,
     "fields": {
       "codigo": 4,
+      "fecha": "2026-05-15T12:00:00Z",
       "estado": "PENDIENTE",
       "mensaje": "Sigue disponible el teclado?",
       "producto": 4,
@@ -48,6 +52,7 @@
     "pk": 5,
     "fields": {
       "codigo": 5,
+      "fecha": "2026-05-15T12:00:00Z",
       "estado": "PENDIENTE",
       "mensaje": "Me sirve para el examen.",
       "producto": 5,
@@ -59,6 +64,7 @@
     "pk": 6,
     "fields": {
       "codigo": 6,
+      "fecha": "2026-05-15T12:00:00Z",
       "estado": "PENDIENTE",
       "mensaje": "Aceptas intercambios?",
       "producto": 6,
@@ -70,6 +76,7 @@
     "pk": 7,
     "fields": {
       "codigo": 7,
+      "fecha": "2026-05-15T12:00:00Z",
       "estado": "PENDIENTE",
       "mensaje": "Las compro hoy mismo.",
       "producto": 7,
@@ -81,6 +88,7 @@
     "pk": 8,
     "fields": {
       "codigo": 8,
+      "fecha": "2026-05-15T12:00:00Z",
       "estado": "ACEPTADA",
       "mensaje": "Me encanta la sudadera.",
       "producto": 8,

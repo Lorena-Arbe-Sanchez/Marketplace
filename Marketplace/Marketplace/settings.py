@@ -121,3 +121,4 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'shared/static']
+# TODO : Mirar si quitar el STATICFILES_DIRS

@@ -4,10 +4,11 @@
     "pk": 1,
     "fields": {
       "codigo": 101,
-      "titulo": "Ratón Gaming",
-      "descripcion": "Logitech G502.",
-      "precio": "30.00",
+      "titulo": "Ratón Gaming Logitech",
+      "descripcion": "Modelo G502 en perfecto estado, poco uso.",
+      "precio": "35.50",
       "estado": "DISPONIBLE",
+      "fecha_publicacion": "2026-05-15T12:00:00Z",
       "categoria": 1,
       "usuario": 1
     }
@@ -17,10 +18,11 @@
     "pk": 2,
     "fields": {
       "codigo": 102,
-      "titulo": "Libro SGE",
-      "descripcion": "Libro de texto oficial.",
-      "precio": "15.00",
-      "estado": "RESERVADO",
+      "titulo": "Libro de Redes CISCO",
+      "descripcion": "Libro oficial para la certificación CCNA.",
+      "precio": "25.00",
+      "estado": "DISPONIBLE",
+      "fecha_publicacion": "2026-05-15T12:00:00Z",
       "categoria": 2,
       "usuario": 2
     }
@@ -30,10 +32,11 @@
     "pk": 3,
     "fields": {
       "codigo": 103,
-      "titulo": "Silla de oficina",
-      "descripcion": "Ergonómica.",
-      "precio": "50.00",
-      "estado": "VENDIDO",
+      "titulo": "Silla de Oficina Ergonómica",
+      "descripcion": "Color negro, regulable en altura.",
+      "precio": "55.00",
+      "estado": "RESERVADO",
+      "fecha_publicacion": "2026-05-15T12:00:00Z",
       "categoria": 3,
       "usuario": 3
     }
@@ -43,10 +46,11 @@
     "pk": 4,
     "fields": {
       "codigo": 104,
-      "titulo": "Teclado Mecánico",
-      "descripcion": "Switches rojos.",
-      "precio": "40.00",
+      "titulo": "Monitor 24 pulgadas Dell",
+      "descripcion": "Resolución Full HD, incluye cable HDMI.",
+      "precio": "80.00",
       "estado": "DISPONIBLE",
+      "fecha_publicacion": "2026-05-15T12:00:00Z",
       "categoria": 1,
       "usuario": 4
     }
@@ -56,11 +60,12 @@
     "pk": 5,
     "fields": {
       "codigo": 105,
-      "titulo": "Calculadora Casio",
-      "descripcion": "Modelo científico.",
-      "precio": "10.00",
-      "estado": "DISPONIBLE",
-      "categoria": 4,
+      "titulo": "Teclado Mecánico RGB",
+      "descripcion": "Switches Blue, ideal para programar.",
+      "precio": "40.00",
+      "estado": "VENDIDO",
+      "fecha_publicacion": "2026-05-15T12:00:00Z",
+      "categoria": 1,
       "usuario": 5
     }
   },
@@ -69,10 +74,11 @@
     "pk": 6,
     "fields": {
       "codigo": 106,
-      "titulo": "Cascos Sony",
-      "descripcion": "Cancelación de ruido.",
-      "precio": "80.00",
+      "titulo": "Cascos con Micrófono",
+      "descripcion": "Marca Corsair, cancelación de ruido.",
+      "precio": "45.00",
       "estado": "DISPONIBLE",
+      "fecha_publicacion": "2026-05-15T12:00:00Z",
       "categoria": 4,
       "usuario": 6
     }
@@ -82,11 +88,12 @@
     "pk": 7,
     "fields": {
       "codigo": 107,
-      "titulo": "Mancuernas 5kg",
-      "descripcion": "Pareja de mancuernas.",
-      "precio": "20.00",
-      "estado": "DISPONIBLE",
-      "categoria": 5,
+      "titulo": "Calculadora Científica Casio",
+      "descripcion": "Modelo recomendado para exámenes de ingeniería.",
+      "precio": "18.00",
+      "estado": "RESERVADO",
+      "fecha_publicacion": "2026-05-15T12:00:00Z",
+      "categoria": 4,
       "usuario": 7
     }
   },
@@ -95,10 +102,11 @@
     "pk": 8,
     "fields": {
       "codigo": 108,
-      "titulo": "Sudadera Egibide",
-      "descripcion": "Talla L, azul.",
+      "titulo": "Sudadera Egibide Talla M",
+      "descripcion": "Color azul marino, comprada el curso pasado.",
       "precio": "12.00",
-      "estado": "RESERVADO",
+      "estado": "DISPONIBLE",
+      "fecha_publicacion": "2026-05-15T12:00:00Z",
       "categoria": 7,
       "usuario": 8
     }
