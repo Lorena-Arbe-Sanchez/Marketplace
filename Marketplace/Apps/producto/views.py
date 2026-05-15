@@ -21,8 +21,27 @@ def crearProducto(request):
 
 
 def listarProductos(request):
+    # 1. Obtener parámetros de la URL (?categoria=...&estado=...)
+    cat_id = request.GET.get('categoria')
+    estado = request.GET.get('estado')
+
+    # 2. Empezar con todos los productos
     productos = Producto.objects.all()
-    return render(request, "producto/producto.html", {"productos": productos})
+
+    # 3. Aplicar filtros si existen
+    if cat_id:
+        productos = productos.filter(categoria_id=cat_id)
+    if estado:
+        productos = productos.filter(estado=estado)
+
+    # 4. Pasar también las categorías para el desplegable
+    from .models import Categoria
+    categorias = Categoria.objects.all()
+
+    return render(request, "producto/producto.html", {
+        "productos": productos,
+        "categorias": categorias
+    })
 
 
 def detalleProducto(request, pk):

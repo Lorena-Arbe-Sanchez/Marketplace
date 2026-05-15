@@ -1,12 +1,90 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Producto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egibide Community Market - Catálogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'producto/style.css' %}">
 </head>
-<body>
 
-<h1>Hola desde producto</h1>
+<body class="bg-light">
 
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Marketplace Interno</h2>
+        <a href="{% url 'producto:crear' %}" class="btn btn-success px-4">+ Publicar</a>
+    </div>
+
+    <div class="card mb-4 shadow-sm border-0">
+        <div class="card-body p-4">
+            <form id="filter-form" class="row g-3" method="GET" action="{% url 'producto:lista' %}">
+                <div class="col-md-5">
+                    <label class="form-label small fw-bold">Categoría</label>
+                    <select name="categoria" class="form-select">
+                        <option value="">Todas las Categorías</option>
+                        {% for cat in categorias %}
+                            <option value="{{ cat.id }}" {% if request.GET.categoria == cat.id|stringformat:"i" %}
+                                selected{% endif %}>
+                                {{ cat.nombre }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-md-5">
+                    <label class="form-label small fw-bold">Estado</label>
+                    <select name="estado" class="form-select">
+                        <option value="">Todos los Estados</option>
+                        <option value="DISPONIBLE" {% if request.GET.estado == "DISPONIBLE" %}selected{% endif %}>
+                        Disponible</option>
+                        <option value="RESERVADO" {% if request.GET.estado == "RESERVADO" %}selected{% endif %}>
+                        Reservado</option>
+                        <option value="VENDIDO" {% if request.GET.estado == "VENDIDO" %}selected{% endif %}>
+                        Vendido</option>
+                    </select>
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">Filtrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for producto in productos %}
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="card-title">{{ producto.titulo }}</h5>
+                        <span class="badge {% if producto.estado == 'DISPONIBLE' %}bg-success
+                            {% elif producto.estado == 'RESERVADO' %}bg-warning text-dark
+                            {% else %}bg-danger{% endif %}">
+                            {{ producto.get_estado_display }}
+                        </span>
+                    </div>
+                    <h6 class="card-subtitle mb-3">{{ producto.precio }}€</h6>
+                    <p class="card-text text-secondary">{{ producto.descripcion|truncatechars:80 }}</p>
+                    <p class="card-text"><small class="text-muted">
+                        <i class="bi bi-tag"></i> {{ producto.categoria.nombre|default:"Sin categoría" }}
+                    </small></p>
+                </div>
+                <div class="card-footer bg-white border-top-0 pb-3">
+                    <a href="{% url 'producto:detalle' producto.pk %}" class="btn btn-outline-primary w-100">
+                        Ver Detalle</a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center py-5">
+            <p class="text-muted">No se han encontrado productos con esos filtros.</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'producto/main.js' %}"></script>
 </body>
 </html>
