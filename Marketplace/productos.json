@@ -1,10 +1,106 @@
 [
-  {"model": "producto.producto", "pk": 1, "fields": {"codigo": 101, "titulo": "Ratón Gaming", "descripcion": "Logitech G502.", "precio": "30.00", "estado": "DISPONIBLE", "categoria": 1, "usuario": 1}},
-  {"model": "producto.producto", "pk": 2, "fields": {"codigo": 102, "titulo": "Libro SGE", "descripcion": "Libro de texto oficial.", "precio": "15.00", "estado": "RESERVADO", "categoria": 2, "usuario": 2}},
-  {"model": "producto.producto", "pk": 3, "fields": {"codigo": 103, "titulo": "Silla de oficina", "descripcion": "Ergonómica.", "precio": "50.00", "estado": "VENDIDO", "categoria": 3, "usuario": 3}},
-  {"model": "producto.producto", "pk": 4, "fields": {"codigo": 104, "titulo": "Teclado Mecánico", "descripcion": "Switches rojos.", "precio": "40.00", "estado": "DISPONIBLE", "categoria": 1, "usuario": 4}},
-  {"model": "producto.producto", "pk": 5, "fields": {"codigo": 105, "titulo": "Calculadora Casio", "descripcion": "Modelo científico.", "precio": "10.00", "estado": "DISPONIBLE", "categoria": 4, "usuario": 5}},
-  {"model": "producto.producto", "pk": 6, "fields": {"codigo": 106, "titulo": "Cascos Sony", "descripcion": "Cancelación de ruido.", "precio": "80.00", "estado": "DISPONIBLE", "categoria": 4, "usuario": 6}},
-  {"model": "producto.producto", "pk": 7, "fields": {"codigo": 107, "titulo": "Mancuernas 5kg", "descripcion": "Pareja de mancuernas.", "precio": "20.00", "estado": "DISPONIBLE", "categoria": 5, "usuario": 7}},
-  {"model": "producto.producto", "pk": 8, "fields": {"codigo": 108, "titulo": "Sudadera Egibide", "descripcion": "Talla L, azul.", "precio": "12.00", "estado": "RESERVADO", "categoria": 7, "usuario": 8}}
+  {
+    "model": "producto.producto",
+    "pk": 1,
+    "fields": {
+      "codigo": 101,
+      "titulo": "Ratón Gaming",
+      "descripcion": "Logitech G502.",
+      "precio": "30.00",
+      "estado": "DISPONIBLE",
+      "categoria": 1,
+      "usuario": 1
+    }
+  },
+  {
+    "model": "producto.producto",
+    "pk": 2,
+    "fields": {
+      "codigo": 102,
+      "titulo": "Libro SGE",
+      "descripcion": "Libro de texto oficial.",
+      "precio": "15.00",
+      "estado": "RESERVADO",
+      "categoria": 2,
+      "usuario": 2
+    }
+  },
+  {
+    "model": "producto.producto",
+    "pk": 3,
+    "fields": {
+      "codigo": 103,
+      "titulo": "Silla de oficina",
+      "descripcion": "Ergonómica.",
+      "precio": "50.00",
+      "estado": "VENDIDO",
+      "categoria": 3,
+      "usuario": 3
+    }
+  },
+  {
+    "model": "producto.producto",
+    "pk": 4,
+    "fields": {
+      "codigo": 104,
+      "titulo": "Teclado Mecánico",
+      "descripcion": "Switches rojos.",
+      "precio": "40.00",
+      "estado": "DISPONIBLE",
+      "categoria": 1,
+      "usuario": 4
+    }
+  },
+  {
+    "model": "producto.producto",
+    "pk": 5,
+    "fields": {
+      "codigo": 105,
+      "titulo": "Calculadora Casio",
+      "descripcion": "Modelo científico.",
+      "precio": "10.00",
+      "estado": "DISPONIBLE",
+      "categoria": 4,
+      "usuario": 5
+    }
+  },
+  {
+    "model": "producto.producto",
+    "pk": 6,
+    "fields": {
+      "codigo": 106,
+      "titulo": "Cascos Sony",
+      "descripcion": "Cancelación de ruido.",
+      "precio": "80.00",
+      "estado": "DISPONIBLE",
+      "categoria": 4,
+      "usuario": 6
+    }
+  },
+  {
+    "model": "producto.producto",
+    "pk": 7,
+    "fields": {
+      "codigo": 107,
+      "titulo": "Mancuernas 5kg",
+      "descripcion": "Pareja de mancuernas.",
+      "precio": "20.00",
+      "estado": "DISPONIBLE",
+      "categoria": 5,
+      "usuario": 7
+    }
+  },
+  {
+    "model": "producto.producto",
+    "pk": 8,
+    "fields": {
+      "codigo": 108,
+      "titulo": "Sudadera Egibide",
+      "descripcion": "Talla L, azul.",
+      "precio": "12.00",
+      "estado": "RESERVADO",
+      "categoria": 7,
+      "usuario": 8
+    }
+  }
 ]

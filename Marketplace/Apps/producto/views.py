@@ -3,8 +3,6 @@ from .models import Producto
 from .forms import ProductoForm
 
 
-# Create your views here.
-
 def crearProducto(request):
     if request.method == "POST":
         form = ProductoForm(request.POST)

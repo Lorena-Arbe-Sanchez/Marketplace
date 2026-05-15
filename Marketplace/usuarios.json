@@ -1,10 +1,98 @@
 [
-  {"model": "usuario.usuario", "pk": 1, "fields": {"dni": "11111111A", "nombre": "Jon", "apellido1": "Armentia", "apellido2": "Ruiz", "email": "jon@egibide.org", "telefono": "600111222"}},
-  {"model": "usuario.usuario", "pk": 2, "fields": {"dni": "22222222B", "nombre": "Ane", "apellido1": "Garcia", "apellido2": "Sanz", "email": "ane@egibide.org", "telefono": "600222333"}},
-  {"model": "usuario.usuario", "pk": 3, "fields": {"dni": "33333333C", "nombre": "Mikel", "apellido1": "López", "apellido2": "Urquijo", "email": "mikel@egibide.org", "telefono": "600444555"}},
-  {"model": "usuario.usuario", "pk": 4, "fields": {"dni": "44444444D", "nombre": "Maite", "apellido1": "Ortiz", "apellido2": "Zabala", "email": "maite@egibide.org", "telefono": "600666777"}},
-  {"model": "usuario.usuario", "pk": 5, "fields": {"dni": "55555555E", "nombre": "Iker", "apellido1": "Jiménez", "apellido2": "Díaz", "email": "iker@egibide.org", "telefono": "600888999"}},
-  {"model": "usuario.usuario", "pk": 6, "fields": {"dni": "66666666F", "nombre": "Lucía", "apellido1": "Martín", "apellido2": "Blanco", "email": "lucia@egibide.org", "telefono": "600000111"}},
-  {"model": "usuario.usuario", "pk": 7, "fields": {"dni": "77777777G", "nombre": "Xabier", "apellido1": "Otxoa", "apellido2": "Etxebarria", "email": "xabi@egibide.org", "telefono": "600222111"}},
-  {"model": "usuario.usuario", "pk": 8, "fields": {"dni": "88888888H", "nombre": "Elena", "apellido1": "Pérez", "apellido2": "Gómez", "email": "elena@egibide.org", "telefono": "600333222"}}
+  {
+    "model": "usuario.usuario",
+    "pk": 1,
+    "fields": {
+      "dni": "11111111A",
+      "nombre": "Jon",
+      "apellido1": "Armentia",
+      "apellido2": "Ruiz",
+      "email": "jon@egibide.org",
+      "telefono": "600111222"
+    }
+  },
+  {
+    "model": "usuario.usuario",
+    "pk": 2,
+    "fields": {
+      "dni": "22222222B",
+      "nombre": "Ane",
+      "apellido1": "Garcia",
+      "apellido2": "Sanz",
+      "email": "ane@egibide.org",
+      "telefono": "600222333"
+    }
+  },
+  {
+    "model": "usuario.usuario",
+    "pk": 3,
+    "fields": {
+      "dni": "33333333C",
+      "nombre": "Mikel",
+      "apellido1": "López",
+      "apellido2": "Urquijo",
+      "email": "mikel@egibide.org",
+      "telefono": "600444555"
+    }
+  },
+  {
+    "model": "usuario.usuario",
+    "pk": 4,
+    "fields": {
+      "dni": "44444444D",
+      "nombre": "Maite",
+      "apellido1": "Ortiz",
+      "apellido2": "Zabala",
+      "email": "maite@egibide.org",
+      "telefono": "600666777"
+    }
+  },
+  {
+    "model": "usuario.usuario",
+    "pk": 5,
+    "fields": {
+      "dni": "55555555E",
+      "nombre": "Iker",
+      "apellido1": "Jiménez",
+      "apellido2": "Díaz",
+      "email": "iker@egibide.org",
+      "telefono": "600888999"
+    }
+  },
+  {
+    "model": "usuario.usuario",
+    "pk": 6,
+    "fields": {
+      "dni": "66666666F",
+      "nombre": "Lucía",
+      "apellido1": "Martín",
+      "apellido2": "Blanco",
+      "email": "lucia@egibide.org",
+      "telefono": "600000111"
+    }
+  },
+  {
+    "model": "usuario.usuario",
+    "pk": 7,
+    "fields": {
+      "dni": "77777777G",
+      "nombre": "Xabier",
+      "apellido1": "Otxoa",
+      "apellido2": "Etxebarria",
+      "email": "xabi@egibide.org",
+      "telefono": "600222111"
+    }
+  },
+  {
+    "model": "usuario.usuario",
+    "pk": 8,
+    "fields": {
+      "dni": "88888888H",
+      "nombre": "Elena",
+      "apellido1": "Pérez",
+      "apellido2": "Gómez",
+      "email": "elena@egibide.org",
+      "telefono": "600333222"
+    }
+  }
 ]
