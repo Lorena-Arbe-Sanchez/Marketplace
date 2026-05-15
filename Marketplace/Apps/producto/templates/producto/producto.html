@@ -1,12 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Producto</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">Catálogo de Productos</h2>
+    
+    <div class="row mb-4">
+        <form class="col-md-12 d-flex gap-2">
+            <select name="categoria" class="form-select">
+                <option value="">Todas las Categorías</option>
+                </select>
+            <select name="estado" class="form-select">
+                <option value="">Todos los Estados</option>
+                <option value="disponible">Disponible</option>
+                <option value="reservado">Reservado</option>
+                <option value="vendido">Vendido</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+        </form>
+    </div>
 
-<h1>Hola desde producto</h1>
-
-</body>
-</html>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for producto in productos %}
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{ producto.titulo }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ producto.precio }}€</h6>
+                    <p class="card-text">{{ producto.descripcion|truncatechars:100 }}</p>
+                    <span class="badge {% if producto.estado == 'disponible' %}bg-success{% else %}bg-warning{% endif %}">
+                        {{ producto.estado|capfirst }}
+                    </span>
+                </div>
+                <div class="card-footer bg-transparent border-top-0">
+                    <a href="{% url 'detalle_producto' producto.id %}" class="btn btn-outline-primary w-100">Ver Detalle</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
