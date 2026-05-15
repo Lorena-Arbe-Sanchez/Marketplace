@@ -1,0 +1,45 @@
+:root {
+    --egibide-blue: #005596;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Efecto hover en las tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important;
+}
+
+/* Títulos de las tarjetas */
+.card-title {
+    font-weight: 600;
+    color: var(--egibide-blue);
+}
+
+/* Estilo para los precios */
+.card-subtitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Ajustar el badge para que se vea más moderno */
+.badge {
+    padding: 0.5em 0.8em;
+    border-radius: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+/* Botón personalizado */
+.btn-outline-primary {
+    border-radius: 8px;
+    font-weight: 500;
+}
